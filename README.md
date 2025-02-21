@@ -71,7 +71,7 @@ As this project is in early development, we're not accepting contributions yet. 
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
