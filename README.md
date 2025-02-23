@@ -14,26 +14,42 @@ This project is currently in active development. Many core features are still be
 - Responsive design
 - Category browsing interface
 - Post listing interface
+- Basic Go backend API structure
 
 ### Coming Soon
 - Authentication system
-- Database integration
+- Complete database integration
 - Post creation and management
 - Comment system
 - User roles and permissions
 - Search functionality
 - Real-time updates
 - API endpoints
+- WebSocket integration
 
 ## 🛠 Tech Stack
 
-- **Frontend**: Next.js 14, React, TypeScript
+### Frontend
+- **Framework**: Next.js 14, React
+- **Language**: TypeScript
 - **Styling**: Tailwind CSS, HeadlessUI
-- **Database**: PostgreSQL (planned)
-- **ORM**: Prisma (planned)
-- **Authentication**: NextAuth.js (planned)
+- **State Management**: React Context (more to come)
+
+### Backend
+- **Language**: Go 1.21+
+- **Framework**: Gin
+- **ORM**: GORM
+- **Database**: PostgreSQL
+- **Authentication**: JWT (planned)
 
 ## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- Go 1.21+
+- PostgreSQL 14+
+
+### Frontend Setup
 
 1. Clone the repository
 ```bash
@@ -41,7 +57,7 @@ git clone https://github.com/dunningkrueg/turing-forum.git
 cd turing-forum
 ```
 
-2. Install dependencies
+2. Install frontend dependencies
 ```bash
 npm install
 ```
@@ -52,10 +68,29 @@ cp .env.example .env.local
 # Edit .env.local with your configuration
 ```
 
-4. Start the development server
+4. Start the frontend development server
 ```bash
 npm run dev
 ```
+
+### Backend Setup
+
+1. Navigate to backend directory
+```bash
+cd backend
+```
+
+2. Install Go dependencies
+```bash
+go mod download
+```
+
+3. Start the backend server
+```bash
+go run main.go
+```
+
+The frontend will be available at `http://localhost:3000` and the API at `http://localhost:8080`.
 
 ## 🤝 Contributing
 
